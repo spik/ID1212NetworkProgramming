@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:c="http://java.sun.com/jsp/jstl/core">
+    <h:head>
+        <title>Convertion Failed</title>
+    </h:head>
+    <h:body>
+        <h1>Convertion Failed</h1>
+        <c:choose>
+            <c:when test="#{convManager.exception.cause.cause != null}">
+                <h3><h:outputText value="#{convManager.exception.cause.cause.message}"/></h3>
+            </c:when>
+            <c:otherwise>
+                <h3><h:outputText value="#{convManager.exception.cause.message}"/></h3>
+            </c:otherwise>
+        </c:choose>
+        <a href="converter.xhtml">Back to main page</a>
+    </h:body>
+</html>

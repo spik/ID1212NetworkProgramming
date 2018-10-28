@@ -1,0 +1,1 @@
+This tests that a private file cannot be accessed by anyone except the owner

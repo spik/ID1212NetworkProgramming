@@ -1,0 +1,6 @@
+se\kth\id1212\id1212currencyconverter\model\Currency_.class
+se\kth\id1212\id1212currencyconverter\model\Currency.class
+se\kth\id1212\id1212currencyconverter\controller\ConverterFacade.class
+se\kth\id1212\id1212currencyconverter\integration\ConverterDAO.class
+se\kth\id1212\id1212currencyconverter\view\ConversionPageManager.class
+se\kth\id1212\id1212currencyconverter\model\Converter.class

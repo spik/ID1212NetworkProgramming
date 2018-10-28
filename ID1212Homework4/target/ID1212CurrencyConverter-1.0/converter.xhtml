@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <title>Currency Converter</title>
+    </h:head>
+    <h:body>
+        <h1>Currency Converter</h1>
+
+        <h:form>
+            <h3>Choose currency to convert from and to</h3>
+            <p>
+                You can choose to convert between GBP, SWE, USD and EUR. 
+            </p>
+            <p>
+                <h:outputLabel for="fromCurrency" value="Convert from: "/>
+                <h:inputText id="fromCurrency" value="#{convManager.fromCurrency}"/>
+            </p>
+            <p>
+                <h:outputLabel for="toCurrency" value="Convert to: "/>
+                <h:inputText id="toCurrency" value="#{convManager.toCurrency}"/>
+            </p>
+            <p>
+                <h:outputLabel for="amount" value="Amount to convert: "/>
+                <h:inputText id="amount" value="#{convManager.amount}"/>
+            </p>
+            <p>
+                <h:commandButton value="convert" action="#{convManager.convert}"/>
+            </p>
+            <hr/>
+        </h:form>
+        <p>
+            <h:outputLabel for="convertedAmount" rendered="#{convManager.convertedAmount != null}"  value="Amount in #{convManager.toCurrency}: "/>
+            <h:outputText id="convertedAmount" value="#{convManager.convertedAmount}"/>
+        </p>
+
+    </h:body>
+</html>

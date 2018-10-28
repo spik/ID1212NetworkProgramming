@@ -1,0 +1,15 @@
+package client.view;
+
+public enum InputType {
+	GETALL, 
+	GETBOOKING,
+	GETROOM,
+	GETBYCOST,
+	GETBYTYPE,
+	GETBYCOSTANDTYPE,
+	BOOK,
+	EDIT,
+	DELETE,
+	QUIT, 
+	INVALID
+}
